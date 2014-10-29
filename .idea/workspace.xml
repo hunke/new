@@ -28,13 +28,13 @@
       <file leaf-file-name="ToolBar.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/uihelper/ToolBar.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.7289294" vertical-offset="448" max-vertical-offset="1411">
-              <caret line="64" column="40" selection-start-line="64" selection-start-column="40" selection-end-line="64" selection-end-column="40" />
+            <state vertical-scroll-proportion="0.2642369" vertical-offset="448" max-vertical-offset="1411">
+              <caret line="40" column="91" selection-start-line="40" selection-start-column="91" selection-end-line="40" selection-end-column="91" />
               <folding>
-                <marker date="1414597426843" expanded="true" signature="1175:1176" placeholder="..." />
-                <marker date="1414597426843" expanded="true" signature="1175:1241" placeholder="..." />
-                <marker date="1414597426843" expanded="true" signature="1681:1772" placeholder="..." />
-                <marker date="1414597426843" expanded="true" signature="1723:1772" placeholder="..." />
+                <marker date="1414598152726" expanded="true" signature="1215:1216" placeholder="..." />
+                <marker date="1414598152726" expanded="true" signature="1215:1281" placeholder="..." />
+                <marker date="1414598152726" expanded="true" signature="1721:1812" placeholder="..." />
+                <marker date="1414598152726" expanded="true" signature="1763:1812" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -74,6 +74,7 @@
         <option value="$PROJECT_DIR$/uihelper/js/JavascriptHelper.php" />
         <option value="$PROJECT_DIR$/uihelper/PageHead.php" />
         <option value="$PROJECT_DIR$/home.php" />
+        <option value="$PROJECT_DIR$/css/uikit.docs.min.css" />
         <option value="$PROJECT_DIR$/uihelper/ToolBar.php" />
       </list>
     </option>
@@ -293,10 +294,10 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="17" max-vertical-offset="170">
           <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
           <folding>
-            <marker date="1414597426843" expanded="true" signature="1175:1176" placeholder="..." />
-            <marker date="1414597426843" expanded="true" signature="1175:1241" placeholder="..." />
-            <marker date="1414597426843" expanded="true" signature="1681:1772" placeholder="..." />
-            <marker date="1414597426843" expanded="true" signature="1723:1772" placeholder="..." />
+            <marker date="1414598152726" expanded="true" signature="1215:1216" placeholder="..." />
+            <marker date="1414598152726" expanded="true" signature="1215:1281" placeholder="..." />
+            <marker date="1414598152726" expanded="true" signature="1721:1812" placeholder="..." />
+            <marker date="1414598152726" expanded="true" signature="1763:1812" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -355,15 +356,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/css/uikit.docs.min.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="834">
+          <caret line="0" column="710" selection-start-line="0" selection-start-column="693" selection-end-line="0" selection-end-column="710" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/uihelper/ToolBar.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7289294" vertical-offset="448" max-vertical-offset="1411">
-          <caret line="64" column="40" selection-start-line="64" selection-start-column="40" selection-end-line="64" selection-end-column="40" />
+        <state vertical-scroll-proportion="0.2642369" vertical-offset="448" max-vertical-offset="1411">
+          <caret line="40" column="91" selection-start-line="40" selection-start-column="91" selection-end-line="40" selection-end-column="91" />
           <folding>
-            <marker date="1414597426843" expanded="true" signature="1175:1176" placeholder="..." />
-            <marker date="1414597426843" expanded="true" signature="1175:1241" placeholder="..." />
-            <marker date="1414597426843" expanded="true" signature="1681:1772" placeholder="..." />
-            <marker date="1414597426843" expanded="true" signature="1723:1772" placeholder="..." />
+            <marker date="1414598152726" expanded="true" signature="1215:1216" placeholder="..." />
+            <marker date="1414598152726" expanded="true" signature="1215:1281" placeholder="..." />
+            <marker date="1414598152726" expanded="true" signature="1721:1812" placeholder="..." />
+            <marker date="1414598152726" expanded="true" signature="1763:1812" placeholder="..." />
           </folding>
         </state>
       </provider>

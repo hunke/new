@@ -38,7 +38,7 @@ class ToolBar {
         $this->searchBtnText = $searchBtnText;
     }
     public function openToolBar(){
-        echo "<nav class='uk-navbar uk-navbar-attached'>";
+        echo "<nav class='uk-navbar uk-navbar-attached'><a href='' class='uk-navbar-toggle'></a>";
         //center topbar
         echo "<div class='uk-container uk-container-center'>";
     }
