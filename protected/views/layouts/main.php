@@ -59,7 +59,7 @@
 
         </nav>
 
-
+        <div class="container">
         <!-- mainmenu -->
 	<?php if(isset($this->breadcrumbs)):?>
 		<?php $this->widget('zii.widgets.CBreadcrumbs', array(
@@ -76,7 +76,7 @@
 		All Rights Reserved.<br/>
 		<?php echo Yii::powered(); ?>
 	</div><!-- footer -->
-
+</div><!--container-->
 </div><!-- page -->
 
 </body>
