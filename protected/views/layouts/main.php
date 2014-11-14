@@ -11,6 +11,7 @@
     $cs->registerScriptFile($baseUrl.'/js/jquery-2.1.1.min.js');
     $cs->registerScriptFile($baseUrl.'/js/bootstrap.min.js');
     $cs->registerCssFile($baseUrl.'/css/bootstrap.min.css');
+    $cs->registerCssFile($baseUrl.'/css/bootstrap-theme.min.css');
     ?>
 	<!-- blueprint CSS framework -->
 
@@ -18,38 +19,47 @@
 </head>
 
 <body>
-    <div class="container" >
 
-        <nav class="navbar navbar-default " role="navigation">
-            <div class="container-fluid">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <!--<a class="navbar-brand" href="#">Brand</a>-->
-                </div>
+        <nav class="navbar navbar-default" role="navigation">
+            <div class="container" >
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
 
-                <div class="collapse navbar-collapse navbar-ex1-collapse">
-
-                <?php $this->widget('zii.widgets.CMenu',array(
-                    'htmlOptions'=>array(
-                        'class'=>'nav nav-bar'
-                    ),
-                    'items'=>array(
-                        array('label'=>'Home', 'url'=>array('/site/index')),
-                        array('label'=>'About', 'url'=>array('/site/page', 'view'=>'about')),
-                        array('label'=>'Contact', 'url'=>array('/site/contact')),
-                        array('label'=>'Login', 'url'=>array('/site/login'), 'visible'=>Yii::app()->user->isGuest),
-                        array('label'=>'Logout ('.Yii::app()->user->name.')', 'url'=>array('/site/logout'), 'visible'=>!Yii::app()->user->isGuest)
-                    ),
-                )); ?>
-
-                </div>
+                <?php echo CHtml::link('Commend 4 me',array('site/index'),array('class'=>'navbar-brand')) ?>
             </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                <ul class="nav navbar-nav">
+
+                    <?php $this->widget('zii.widgets.CMenu',array(
+                        'htmlOptions'=>array(
+                            'class'=>'nav navbar-nav'
+                        ),
+                        'items'=>array(
+                            array('label'=>'Home', 'url'=>array('/site/index')),
+                            array('label'=>'About', 'url'=>array('/site/page', 'view'=>'about')),
+                            array('label'=>'Contact', 'url'=>array('/site/contact')),
+                            array('label'=>'Login', 'url'=>array('/site/login'), 'visible'=>Yii::app()->user->isGuest),
+                            array('label'=>'Logout ('.Yii::app()->user->name.')', 'url'=>array('/site/logout'), 'visible'=>!Yii::app()->user->isGuest)
+                        ),
+                    )); ?>
+
+                </ul>
+
+
+            </div>
+            </div><!--container-->
+
         </nav>
+
+
         <!-- mainmenu -->
 	<?php if(isset($this->breadcrumbs)):?>
 		<?php $this->widget('zii.widgets.CBreadcrumbs', array(
@@ -68,7 +78,6 @@
 	</div><!-- footer -->
 
 </div><!-- page -->
-    </div><!--container-->
 
 </body>
 </html>
