@@ -36,7 +36,6 @@
 
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse navbar-ex1-collapse">
-                <ul class="nav navbar-nav">
 
                     <?php $this->widget('zii.widgets.CMenu',array(
                         'htmlOptions'=>array(
@@ -46,12 +45,20 @@
                             array('label'=>'Home', 'url'=>array('/site/index')),
                             array('label'=>'About', 'url'=>array('/site/page', 'view'=>'about')),
                             array('label'=>'Contact', 'url'=>array('/site/contact')),
+                        ),
+                    )); ?>
+
+                    <?php $this->widget('zii.widgets.CMenu',array(
+                        'htmlOptions'=>array(
+                            'class'=>'nav navbar-nav navbar-right'
+                        ),
+                        'items'=>array(
                             array('label'=>'Login', 'url'=>array('/site/login'), 'visible'=>Yii::app()->user->isGuest),
                             array('label'=>'Logout ('.Yii::app()->user->name.')', 'url'=>array('/site/logout'), 'visible'=>!Yii::app()->user->isGuest)
                         ),
                     )); ?>
 
-                </ul>
+
 
 
             </div>
