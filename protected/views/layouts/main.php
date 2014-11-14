@@ -31,7 +31,7 @@
                     <span class="icon-bar"></span>
                 </button>
 
-                <?php echo CHtml::link('Commend 4 me',array('site/index'),array('class'=>'navbar-brand')) ?>
+                <?php echo CHtml::link(Yii::app()->name,array('site/index'),array('class'=>'navbar-brand')) ?>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
