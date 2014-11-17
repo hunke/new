@@ -35,14 +35,15 @@ $this->widget('bootstrap.widgets.BsNavbar', array(
                 ),
             )
         ),
-       array(
-           'class' => 'bootstrap.widgets.BsActiveForm',
-           'id'=>'shit',
-           'htmlOptions'=>array(
-               'class'=>'navbar-form navbar-left'
-           ),
-           'inputContainer' => 'div.form-group', // Bootstrap requires this, (from BsActiveForm.php)
-       ),
+        array(
+            'class' => 'bootstrap.widgets.BsActiveForm',
+            'layout' => BsHtml::FORM_LAYOUT_INLINE,
+            'id'=>'shit',
+            'htmlOptions'=>array(
+                'class'=>'navbar-form navbar-left'
+            ),
+//           'inputContainer' => 'div.form-group', // Bootstrap requires this, (from BsActiveForm.php)
+        ),
         array(
             'class' => 'bootstrap.widgets.BsNav',
             'type' => 'navbar',
