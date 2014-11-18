@@ -40,16 +40,21 @@ $this->widget('bootstrap.widgets.BsNavbar', array(
             'type' => 'navbar',
             'items' => array(
                 // way 1
-//                BsHtml::beginForm( '/site/search' ),
-//                BsHtml::searchQueryControlGroup('search'),
-//                BsHtml::endForm(),
+                BsHtml::beginForm( '/site/search', 'post', array(
+                    'class' => 'navbar-form navbar-left',
+                )),
+                BsHtml::searchQueryControlGroup('search', '', array(
+                    'prepend' => BsHtml::icon(BsHtml::GLYPHICON_SEARCH),
+                    'placeholder' => 'Search'
+                )),
+                BsHtml::endForm(),
                 // way 2
-    '<form class="navbar-form navbar-left" role="search">
+/*    '<form class="navbar-form navbar-left" role="search">
         <div class="form-group">
           <input type="text" class="form-control" placeholder="Search">
         </div>
         <button type="submit" class="btn btn-default">Submit</button>
-      </form>'
+      </form>'*/
             ),
         ),
         array(
