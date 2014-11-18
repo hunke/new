@@ -36,13 +36,21 @@ $this->widget('bootstrap.widgets.BsNavbar', array(
             )
         ),
         array(
-            'class' => 'bootstrap.widgets.BsActiveForm',
-            'layout' => BsHtml::FORM_LAYOUT_INLINE,
-            'id'=>'shit',
-            'htmlOptions'=>array(
-                'class'=>'navbar-form navbar-left'
+            'class' => 'bootstrap.widgets.BsNav',
+            'type' => 'navbar',
+            'items' => array(
+                // way 1
+//                BsHtml::beginForm( '/site/search' ),
+//                BsHtml::searchQueryControlGroup('search'),
+//                BsHtml::endForm(),
+                // way 2
+    '<form class="navbar-form navbar-left" role="search">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Search">
+        </div>
+        <button type="submit" class="btn btn-default">Submit</button>
+      </form>'
             ),
-//           'inputContainer' => 'div.form-group', // Bootstrap requires this, (from BsActiveForm.php)
         ),
         array(
             'class' => 'bootstrap.widgets.BsNav',
