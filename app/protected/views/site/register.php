@@ -4,7 +4,7 @@
 /* @var $form CActiveForm  */
 echo CHtml::tag('title',array(),$this->pageTitle=Yii::app()->name . '  - Register');
 $this->breadcrumbs=array(
-	'Login',
+	'Register',
 );
 ?>
 

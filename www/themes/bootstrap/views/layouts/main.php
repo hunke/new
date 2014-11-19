@@ -77,7 +77,6 @@ $this->widget('bootstrap.widgets.BsNavbar', array(
                     'url' => array(
                         '/site/login'
                     ),
-                    'pull' => BsHtml::NAVBAR_NAV_PULL_RIGHT,
                     'visible' => Yii::app()->user->isGuest
                 ),
                 array(
