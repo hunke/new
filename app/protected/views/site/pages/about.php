@@ -1,6 +1,6 @@
 <?php
 /* @var $this SiteController */
-echo CHtml::tag('title',array(),$this->pageTitle=Yii::app()->name . ' - About');
+$this->pageTitle=Yii::app()->name . ' - About';
 $this->breadcrumbs=array(
 	'About',
 );

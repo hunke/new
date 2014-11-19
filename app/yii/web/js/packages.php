@@ -13,6 +13,6 @@
 
 return array(
 	'jquery'=>array(
-		'js'=>array(YII_DEBUG ? 'jquery-2.1.1.min.js' : 'jquery-2.1.1.min.js'),
+		'js'=>array(YII_DEBUG ? 'jquery-2.1.1.js' : 'jquery-2.1.1.min.js'),
 	)
 );

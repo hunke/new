@@ -2,7 +2,9 @@
 /* @var $this SiteController */
 /* @var $model LoginForm */
 /* @var $form BsActiveForm  */
-echo CHtml::tag('title',array(),$this->pageTitle=Yii::app()->name . ' - Login');
+
+$this->pageTitle=Yii::app()->name . ' - Login';
+
 $this->breadcrumbs=array(
 	'Login',
 );

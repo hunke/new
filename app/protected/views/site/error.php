@@ -1,7 +1,7 @@
 <?php
 /* @var $this SiteController */
 /* @var $error array */
-echo CHtml::tag('title',array(),$this->pageTitle=Yii::app()->name . ' - Error');
+$this->pageTitle=Yii::app()->name . ' - Error';
 $this->breadcrumbs=array(
 	'Error',
 );

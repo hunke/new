@@ -2,7 +2,7 @@
 /* @var $this SiteController */
 /* @var $model LoginForm */
 /* @var $form CActiveForm  */
-echo CHtml::tag('title',array(),$this->pageTitle=Yii::app()->name . '  - Register');
+$this->pageTitle=Yii::app()->name . '  - Register';
 $this->breadcrumbs=array(
 	'Register',
 );
