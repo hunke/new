@@ -84,10 +84,10 @@ $this->widget('bootstrap.widgets.BsNavbar', array(
 
     )
 ));
-BsHtml::openTag('div', array('class'=>'container'));
-
-echo $content;
-
-BsHtml::closeTag('div');
 ?>
+<div class="container">
+
+<? echo $content; ?>
+
+</div>
 
