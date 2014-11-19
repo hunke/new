@@ -2,12 +2,12 @@
 /* @var $this SiteController */
 /* @var $model LoginForm */
 /* @var $form CActiveForm  */
-echo CHtml::tag('title',array(),$this->pageTitle=Yii::app()->name . ' - Login');
+echo CHtml::tag('title',array(),$this->pageTitle=Yii::app()->name . '  - Register');
 $this->breadcrumbs=array(
 	'Login',
 );
 ?>
-<div class="container">
+
 <h1>Login</h1>
 
 <p>Please fill out the following form with your login credentials:</p>
@@ -50,4 +50,3 @@ $this->breadcrumbs=array(
 
 <?php $this->endWidget(); ?>
 </div><!-- form -->
-</div> <!--container-->

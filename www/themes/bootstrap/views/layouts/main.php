@@ -20,20 +20,16 @@ $cs->registerScript('tooltip', "$('[data-toggle=\"tooltip\"]').tooltip();$('[dat
 $this->widget('bootstrap.widgets.BsNavbar', array(
     'collapse' => true,
     'brandLabel' => BsHtml::icon(BsHtml::GLYPHICON_HOME),
-    'brandUrl' => '/',
+    //TODO replace URL with '/' before deploy to prod
+    'brandUrl' => '/new/www/site/index',
     'items' => array(
         array(
             'class' => 'bootstrap.widgets.BsNav',
             'type' => 'navbar',
+            'htmlOptions'=>array(
+                'style'=>'overflow-x:hidden'
+            ),
             'activateParents' => true,
-            'items' => array(
-                array(
-                    'label' => 'Home',
-                    'url' => array(
-                        'site/index'
-                    ),
-                ),
-            )
         ),
         array(
             'class' => 'bootstrap.widgets.BsNav',
@@ -47,6 +43,7 @@ $this->widget('bootstrap.widgets.BsNavbar', array(
                     'prepend' => BsHtml::icon(BsHtml::GLYPHICON_SEARCH),
                     'placeholder' => 'Search'
                 )),
+                CHtml::htmlButton('Search',array('class'=>'btn btn-primary','type'=>'submit',)),
                 BsHtml::endForm(),
                 // way 2
 /*    '<form class="navbar-form navbar-left" role="search">

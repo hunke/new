@@ -2,8 +2,7 @@
 /* @var $this SiteController */
 /* @var $model ContactForm */
 /* @var $form CActiveForm */
-
-$this->pageTitle=Yii::app()->name . ' - Contact Us';
+echo CHtml::tag('title',array(),$this->pageTitle=Yii::app()->name . ' - Contact us');
 $this->breadcrumbs=array(
 	'Contact',
 );
