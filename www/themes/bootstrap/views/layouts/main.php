@@ -7,6 +7,7 @@ $themePath = Yii::app()->theme->baseUrl;
  */
 $cs->registerCssFile($themePath . '/assets/css/bootstrap.css');
 $cs->registerCssFile($themePath . '/assets/css/bootstrap-theme.css');
+$cs->registerCssFile( '/css/main.css' );
 
 /**
  * JavaScripts
@@ -49,19 +50,6 @@ $this->widget('bootstrap.widgets.BsNavbar', array(
             'activateParents' => true,
             'items' => array(
                 array(
-                    'label' => 'About',
-                    'url' => array(
-                        '/site/page',
-                        'view' => 'about'
-                    )
-                ),
-                array(
-                    'label' => 'Contact',
-                    'url' => array(
-                        '/site/contact'
-                    )
-                ),
-                array(
                     'label' => 'Login',
                     'url' => array(
                         '/site/login'
@@ -91,3 +79,25 @@ $this->widget('bootstrap.widgets.BsNavbar', array(
 
 </div>
 
+<footer class="footer">
+<?php
+
+$this->beginWidget('bootstrap.widgets.BsPanel', array( 'contentCssClass'=>'panel-body centered-pills' ));
+
+echo BsHtml::pills(array(
+    array(
+        'label' => 'About',
+        'url' => array(
+            '/site/page',
+            'view' => 'about'
+        )
+    ),
+    array(
+        'label' => 'Contact',
+        'url' => '/site/contact'
+    ),
+));
+
+$this->endWidget();
+?>
+</footer>
