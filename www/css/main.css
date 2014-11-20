@@ -1,5 +1,4 @@
-/* Sticky footer styles
--------------------------------------------------- */
+/* Sticky footer styles */
 html {
     position: relative;
     min-height: 100%;
@@ -16,6 +15,7 @@ body {
     height: 92px;
     background-color: #f5f5f5;
 }
+/* End Sticky footer styles */
 
 .centered-pills {
     text-align: center

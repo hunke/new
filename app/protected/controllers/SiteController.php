@@ -72,6 +72,12 @@ class SiteController extends Controller
 		$this->render('contact',array('model'=>$model));
 	}
 
+    public function actionRegister()
+    {
+        $model=new RegisterForm;
+        $this->render('register', array( 'model'=>$model ));
+    }
+
 	/**
 	 * Displays the login page
 	 */

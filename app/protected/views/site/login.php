@@ -11,8 +11,7 @@ $this->breadcrumbs=array(
 ?>
 <div class="page-header">
 
-    <h1>Login <small>or <?php
-            echo BsHtml::link('Register','register',array())?></small></h1>
+    <h1>Login <small>or <?php echo BsHtml::link('Register','/site/register') ?></small></h1>
 </div>
 
 <p>Please fill out the following form with your login credentials:</p>
